@@ -51,3 +51,12 @@
         }
     }
 }
+
+@media(min-width: 1440px) {
+    .banner, .banner__content {
+        .banner__content {
+            max-width: 50rem;
+            padding: 0 8rem;
+        }
+    }
+}
