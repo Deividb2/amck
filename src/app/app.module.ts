@@ -4,17 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { NgIconsModule } from '@ng-icons/core';
-import { matMenu as menu, matClose as close } from '@ng-icons/material-icons/baseline'
+import { InitialModule } from './components/initial.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgIconsModule.withIcons({ menu, close })
+    InitialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

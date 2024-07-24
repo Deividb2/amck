@@ -1,0 +1,27 @@
+<header class="header">
+    <div class="header__menu" (click)="hendleMenu()">
+        <ng-icon [name]="menuIcon"></ng-icon>
+    </div>
+
+    <h1 class="header__title">AMCK Planejados</h1>
+
+    <nav class="header__nav-desk">
+        <ul>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Etapas</a></li>
+            <li><a href="#">Depoimentos</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<nav class="header__nav-mobile" [class.closeMenu]="!menuState">
+    <ul>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Etapas</a></li>
+        <li><a href="#">Depoimentos</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</nav>
