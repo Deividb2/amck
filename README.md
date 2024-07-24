@@ -11,7 +11,7 @@ Templates bases
 ## Planejamento de Template
 
 Menu de navegação: `Leroy Merlin`
-Banner: `Leroy Merlin`, `Criare Tijuca`, `New Moveis`, `Veracy`
+Banner: `Veracy`
 Serviços:
 Etapas do projeto:
 Por que escolher a AMCK:
