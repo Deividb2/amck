@@ -53,6 +53,9 @@
     .header {
         height: auto;
         padding: 1.5rem 1rem;
+        position: fixed;
+        right: 0;
+        left: 0;
 
         .header__menu {
             display: none;
