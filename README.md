@@ -1,4 +1,4 @@
-# Amck
+# AMCK Planejados
 
 Templates bases
 

@@ -1,38 +1,52 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// components
-import { HeaderComponent } from './header/header.component';
-
+// Icons
 import { NgIconsModule } from '@ng-icons/core';
-import { matMenu as menu, matClose as close } from '@ng-icons/material-icons/baseline';
+import { matMenu as menu, matClose as close, matWhatsapp as whats } from '@ng-icons/material-icons/baseline';
+import { ionLogoInstagram as insta, ionLogoYoutube as youtube } from '@ng-icons/ionicons'
+
+
+// Components
+import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { PhasesComponent } from './phases/phases.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
 import { WhatsBtnComponent } from './whats-btn/whats-btn.component';
-// import { FooterComponent } from './footer/footer.component';
+import { DepoimentsComponent } from './depoiments/depoiments.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     BannerComponent,
+    ProjectsComponent,
     PhasesComponent,
+    DepoimentsComponent,
+    AboutUsComponent,
     ContactComponent,
     FaqComponent,
     WhatsBtnComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
-    NgIconsModule.withIcons({ menu, close })
+    NgIconsModule.withIcons({ menu, close, whats, insta, youtube })
   ],
   exports: [
     HeaderComponent,
     BannerComponent,
+    ProjectsComponent,
     PhasesComponent,
+    DepoimentsComponent,
+    AboutUsComponent,
     ContactComponent,
     FaqComponent,
     WhatsBtnComponent,
+    FooterComponent
   ]
 })
 export class InitialModule { }

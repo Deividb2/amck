@@ -4,13 +4,6 @@
     gap: 2rem;
     padding: 0 1rem;
 
-    .phases__title {
-        font-size: 1.7rem;
-        font-weight: 800;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
     .phases__cards {
         display: flex;
         flex-direction: column;
@@ -48,10 +41,6 @@
 @media(min-width: 768px) {
     .phases {
         gap: 3rem;
-
-        .phases__title {
-            font-size: 2.2rem;
-        }
 
         .phases__cards {
             flex-direction: row;

@@ -1,0 +1,22 @@
+.whats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 1rem;
+    padding: .6rem .7rem .8rem;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    background-color: #1fae1f;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media(min-width: 1024px) {
+    .whats {
+        bottom: 2rem;
+        right: 2rem;
+        font-size: 2.5rem;
+    }
+}
