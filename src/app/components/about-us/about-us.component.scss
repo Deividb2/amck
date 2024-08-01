@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 50vh;
+    margin: 2rem 0;
 
     .aboutUs__content {
         display: flex;
@@ -32,7 +33,6 @@
     .aboutUs {
         grid-template-columns: repeat(2, 45vw);
         grid-template-rows: 1fr;
-        margin-top: 2rem;
         justify-content: space-around;
 
         .aboutUs__img {
@@ -48,7 +48,7 @@
         grid-template-columns: repeat(2, 40vw);
         grid-template-rows: 1fr;
         place-content: center;
-        margin-top: 4rem;
+        margin: 4rem 0;
 
         .aboutUs__content {
             gap: 1.5rem;

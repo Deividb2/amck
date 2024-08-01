@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 // Icons
 import { NgIconsModule } from '@ng-icons/core';
-import { matMenu as menu, matClose as close, matWhatsapp as whats } from '@ng-icons/material-icons/baseline';
+import { matMenu as menu, matClose as close, matWhatsapp as whats, matArrowForwardIos as arrow } from '@ng-icons/material-icons/baseline';
 import { ionLogoInstagram as insta, ionLogoYoutube as youtube } from '@ng-icons/ionicons'
 
 
@@ -13,6 +13,7 @@ import { BannerComponent } from './banner/banner.component';
 import { PhasesComponent } from './phases/phases.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
+import { QuestionsComponent } from './faq/components/questions/questions.component';
 import { WhatsBtnComponent } from './whats-btn/whats-btn.component';
 import { DepoimentsComponent } from './depoiments/depoiments.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -29,12 +30,13 @@ import { FooterComponent } from './footer/footer.component';
     AboutUsComponent,
     ContactComponent,
     FaqComponent,
+    QuestionsComponent,
     WhatsBtnComponent,
     FooterComponent
   ],
   imports: [
     CommonModule,
-    NgIconsModule.withIcons({ menu, close, whats, insta, youtube })
+    NgIconsModule.withIcons({ menu, close, whats, insta, youtube, arrow }),
   ],
   exports: [
     HeaderComponent,
@@ -45,6 +47,7 @@ import { FooterComponent } from './footer/footer.component';
     AboutUsComponent,
     ContactComponent,
     FaqComponent,
+    QuestionsComponent,
     WhatsBtnComponent,
     FooterComponent
   ]

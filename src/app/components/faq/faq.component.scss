@@ -1,0 +1,21 @@
+.faq__container {
+    display: grid;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin: 2rem 0;
+
+    .faq__container--questions {
+        display: grid;
+        place-content: center;
+
+        app-questions {
+            max-width: 40rem;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .faq__container {
+        gap: 3rem;
+    }
+}
