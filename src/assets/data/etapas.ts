@@ -5,14 +5,14 @@ export const Etapas: Array<IEtapas> = [
     },
     {
         title: 'Contratação',
-        text: 'Prepararemos uma proposta que cabe no seu bolso. Já incluindo produtos, materiais e mão de obra.'
+        text: 'Prepararemos uma proposta que cabe no seu bolso, já incluindo materiais e mão de obra.'
     },
     {
         title: 'Entrega',
         text: 'Entregaremos tudo na sua residência, na data agendada para não atrasar seu projeto.'
     },
     {
-        title: 'Entrega e Montagem',
+        title: 'Montagem',
         text: 'Nossos prestadores iniciarão o serviço e um especialista Leroy Merlin estará sempre de suporte.'
     },
 ]

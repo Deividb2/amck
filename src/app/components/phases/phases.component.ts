@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Etapas } from '../../data/etapas';
+import { Etapas } from '../../../assets/data/etapas';
 
 @Component({
   selector: 'app-phases',
