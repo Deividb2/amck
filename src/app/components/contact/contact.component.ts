@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-  phoneNumber: number = 21980587193;
+  phoneNumber: number = 5521980587193;
+  encodedMessage: string = "Olá! Gostaria de fazer um orçamento!"
 }
