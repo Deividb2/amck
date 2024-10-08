@@ -1,7 +1,7 @@
 export const Etapas: Array<IEtapas> = [
     {
-        title: 'Personalização',
-        text: 'Entenderemos suas necessidades e criaremos um projeto exclusivo'
+        title: 'Projeção',
+        text: 'Entenderemos suas necessidades e criaremos um projeto exclusivo que se adeque ao seu ambiente'
     },
     {
         title: 'Contratação',
@@ -13,7 +13,7 @@ export const Etapas: Array<IEtapas> = [
     },
     {
         title: 'Montagem',
-        text: 'Nossos prestadores iniciarão o serviço e um especialista Leroy Merlin estará sempre de suporte.'
+        text: 'Iniciaremos o processo de montagem e estaremos abertos a sujestões de melhoria.'
     },
 ]
 
