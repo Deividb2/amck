@@ -1,3 +1,5 @@
+@import "../../../assets/styles/variables";
+
 .aboutUs {
     display: grid;
     grid-template-columns: 1fr;
@@ -25,7 +27,7 @@
     }
 
     .aboutUs__img {
-        background-color: #ccc;
+        background: url(https://storage.needpix.com/rsynced_images/kitchen-2364667_1280.jpg) center / cover no-repeat;
     }
 }
 

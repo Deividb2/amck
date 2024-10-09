@@ -14,5 +14,6 @@ import { matWhatsapp as whats } from '@ng-icons/material-icons/baseline';
   styleUrl: './whats-btn.component.scss'
 })
 export class WhatsBtnComponent {
-
+  message: string = "Olá,%20gostaria%20realizar%20um%20orçamento!";
+  phoneNumber: string = "5521980587193";
 }

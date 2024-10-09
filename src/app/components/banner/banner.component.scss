@@ -1,10 +1,11 @@
+@import "../../../assets/styles/variables";
+
 .banner {
     display: flex;
     align-items: center;
     height: 100vh;
-    background: url(../../../assets/images/img1.jpg) no-repeat center center / cover;
-    background-blend-mode: color;
-    background-color: rgba(0, 0, 0, 0.349);
+    background: linear-gradient(90deg, #000000bb 40%, #fff), url(../../../assets/images/img1.jpg) no-repeat center / cover;
+    background-blend-mode: multiply;
 
     &__content {
         display: flex;
@@ -15,6 +16,11 @@
 
         &--title {
             font-size: 1.8rem;
+            color: $second-color-light;
+        }
+
+        &--text {
+            color: $second-color-light;
         }
     }
 }

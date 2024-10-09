@@ -1,8 +1,10 @@
+@import "../../../../../assets/styles/variables";
+
 section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 1px solid #000;
+    border: 1px solid $primary-color;
 
     .questions {
         display: flex;
@@ -33,6 +35,6 @@ section {
     .openResponse {
         height: auto;
         padding: 1rem;
-        border-top: 1px solid #000;
+        border-top: 1px solid $primary-color;
     }
 }

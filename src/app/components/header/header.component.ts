@@ -16,12 +16,14 @@ import { matMenu as menu, matClose as close } from '@ng-icons/material-icons/bas
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
+
+
 export class HeaderComponent {
+  hendleMenuIcon: boolean = false
   menuIcon: string = 'menu'
-  menuState: boolean = false
 
   hendleMenu() {
-    this.menuState ? this.menuIcon = 'menu' : this.menuIcon = 'close'
-    this.menuState = !this.menuState
+    this.hendleMenuIcon = !this.hendleMenuIcon
+    this.hendleMenuIcon ? this.menuIcon = 'close' : this.menuIcon = 'menu'
   }
 }

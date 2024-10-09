@@ -15,6 +15,6 @@ import { ionLogoInstagram as insta, ionLogoYoutube as youtube } from '@ng-icons/
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-  phoneNumber: number = 5521980587193;
-  encodedMessage: string = "Olá! Gostaria de fazer um orçamento!"
+  message: string = "Olá,%20gostaria%20realizar%20um%20orçamento!";
+  phoneNumber: string = "5521980587193";
 }
