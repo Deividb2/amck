@@ -1,0 +1,16 @@
+<section class="stages">
+    <h2 class="stages__title">Etapas do projeto</h2>
+
+    <div class="stages__cards">
+
+        <div class="stages__cards--card" *ngFor="let stage of stages; let i = index">
+            <div class="stages__cards--card__head">
+                <span>{{ i+1 }}°</span>
+                <h3>{{ stage.title }}</h3>
+            </div>
+            <p class="stages__cards--card__text">{{ stage.text }}</p>
+        </div>
+        
+    </div>
+</section>
+

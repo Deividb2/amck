@@ -1,0 +1,42 @@
+@use "../../../../assets/styles/variables" as *;
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+    cursor: default;
+
+    &__question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        
+        &--title {
+            font-size: 1rem;
+        }
+        
+        &--arrow {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__response {
+        padding: 0 1rem;
+        height: 0;
+        overflow: hidden;
+        transition: all .2s ease;
+    }
+
+    .openResponse {
+        height: auto;
+        padding: 1rem;
+        border-top: 1px solid #000;
+    }
+}
+
+@media(min-width: 1024px) {
+    .questions {
+        cursor: pointer;
+    }
+}

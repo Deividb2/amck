@@ -1,0 +1,78 @@
+@use "../../../assets/styles/variables" as *;
+
+.footer {
+    display: grid;
+    margin-top: 4rem;
+
+    .footer__top {
+        display: grid;
+        gap: 2rem;
+        padding: 1rem;
+
+        .footer__top--title {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        div {
+            display: grid;
+            gap: 2rem;
+
+            .footer__top--nav {
+                .footer__top--nav__title {
+                    font-size: 1rem;
+                    margin-bottom: .7rem;
+                    text-transform: uppercase;
+                }
+
+                .footer__top--nav__list {
+                    display: grid;
+                    gap: .7rem;
+                    list-style: none;
+
+                    li a {
+                        text-decoration: none;
+                        color: #141414;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__down {
+        display: grid;
+        place-content: center;
+        padding: 1rem;
+        text-align: center;
+        background-color: #141414;
+        color: #fff;
+    }
+}
+
+@media(min-width: 768px) {
+    .footer {
+        .footer__top {
+            div {
+                grid-template-columns: repeat(3, 1fr);
+
+                .footer__top--nav {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .footer {
+        .footer__top {
+            grid-template-columns: 35vw 1fr;
+
+            .footer__top--title {
+                font-size: 3rem;
+                place-self: center;
+                max-width: 20rem;
+            }
+        }
+    }
+}

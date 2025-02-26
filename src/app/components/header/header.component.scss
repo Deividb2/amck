@@ -1,0 +1,102 @@
+@use "../../../assets/styles/variables" as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: $black-default;
+
+    &__menu {
+        display: grid;
+        place-content: center;
+        font-size: 2rem;
+        color: $white-default;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        color: $white-default;
+    }
+
+    &__navlist {
+        display: none;
+    }
+
+    &__button {
+        display: none;
+    }
+}
+
+.menu-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    background-color: $white-light;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    text-wrap: nowrap;
+    transition: all .5s ease;
+
+    li a {
+        text-decoration: none;
+        color: $black-light; 
+    }
+}
+
+.menu-open {
+    width: 75vw;
+    padding: 1rem;
+}
+
+@media(min-width: 768px) {
+    .header {
+        padding: 1rem 2rem;
+
+        &__menu {
+            display: none;
+        }
+
+        &__title {
+            font-size: 1.5rem;
+        }
+
+        &__navlist {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+
+            li a {
+                text-decoration: none;
+                font-size: .9rem;
+                color: $white-default;
+                color: $white-light;
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .header {
+        height: 12vh;
+
+        &__button {
+            display: block;
+            padding: .9rem 1.2rem;
+            background-color: $white-light;
+            font-size: .9rem;
+            border-radius: 1rem;
+            
+            a {
+                color: #000;
+                color: $p12;
+                text-decoration: none;
+            }
+        }
+    }
+}

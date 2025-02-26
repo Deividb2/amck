@@ -1,0 +1,12 @@
+<div class="questions">
+    <div class="questions__question" (click)="hendleResponse()">
+        <h5 class="questions__question--title">{{ question }}</h5>
+        <div [class.questions__question--arrow]="hendleResponseProp">
+            <ng-icon name="arrow"></ng-icon>
+        </div>
+    </div>
+
+    <div class="questions__response" [class.openResponse]="hendleResponseProp">
+        <p>{{ response }}</p>
+    </div>
+</div>

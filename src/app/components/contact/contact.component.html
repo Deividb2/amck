@@ -1,0 +1,52 @@
+<section class="contact">
+    <div class="contact__content">
+        <h2 class="contact__content--title">Entrar em contato</h2>
+        <p class="contact__content--text">
+            Se você deseja dar um trato no visual do seu ambiente e torna-lo
+            mais
+            confortável, você está no lugar certo!<br><br>
+            A AMCK Planejados tem como um de seus princípios não somente
+            oferecer móveis formidáveis e funcionais, mas também um ambiente de
+            lazer aconchegante que oferece uma excelente experiência ao
+            cliente.<br><br>
+            Entre em contato conosco e eleve seu padrão de conforto.
+        </p>
+        <div class="contact__content--icons">
+            <a href="https://www.youtube.com/channel/UC4jeO4TTbn9MghsdNxqUXQg" target="_blank">
+                <ng-icon name="youtube"></ng-icon>
+            </a>
+            <a href="https://www.instagram.com/amck_planejados/" target="_blank">
+                <ng-icon name="insta"></ng-icon>
+            </a>
+
+            <a href="https://wa.me/{{phoneNumber}}?text={{message}}" target="_blank">
+                <ng-icon name="whats"></ng-icon>
+            </a>
+        </div>
+    </div>
+
+    <div class="contact__form">
+        <form (submit)="sendEmail()">
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Digite seu nome" autocomplete="off" required
+                [(ngModel)]="formData.name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email" autocomplete="off" required
+                [(ngModel)]="formData.email">
+            </div>
+
+            <div>
+                <label for="msg">Mensagem</label>
+                <textarea name="message" id="msg" placeholder="Digite sua mensagem" required
+                [(ngModel)]="formData.email"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</section>

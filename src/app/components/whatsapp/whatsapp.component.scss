@@ -1,0 +1,22 @@
+@use "../../../assets/styles/variables" as *;
+
+.whats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    background-color: $whatsapp-bg;
+    color: $white-default;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+@media(min-width: 1024px) {
+    .whats {
+        cursor: pointer;
+    }
+}

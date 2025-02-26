@@ -1,0 +1,11 @@
+<section class="faq-container">
+    <h2 class="faq-container__title">Perguntas Frequentes</h2>
+
+    <div class="faq-container__questions">
+        <app-questions
+            *ngFor="let i of questions"
+            [question]="i.question"
+            [response]="i.response"
+        ></app-questions>
+    </div>
+</section>
