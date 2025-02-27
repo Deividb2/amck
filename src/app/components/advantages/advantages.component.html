@@ -1,7 +1,18 @@
-<p>advantages works!</p>
+<section class="advantages">
+    <div class="advantages__header">
+        <h2 class="advantages__header--title">Algumas vantagens dos <strong>móveis planejados</strong></h2>
+        <div class="advantages__header--line"></div>
+    </div>
 
-<!-- 
+    <div class="advantages__cards">
+        @for (card of advantages; track $index) {
+            <div class="advantages__cards--card">
+                <h3 class="advantages__cards--card__title">{{ card.title }}</h3>
+                <div class="advantages__cards--card__line"></div>
+                <h3 class="advantages__cards--card__subtitle">{{ card.text }}</h3>
+            </div>
+        }
+    </div>
 
-https://planejados.todeschinibotafogorio.com.br/?gad_source=1&gclid=CjwKCAiAlPu9BhAjEiwA5NDSA3HUmFv2NEu0HhF84-nocDvxiyczwG2JBjBrN1udqIIk8TtR1aYYEBoCscIQAvD_BwE
-
--->
+    <a href="#" class="advantages__button">Faça um orçamento</a>
+</section>

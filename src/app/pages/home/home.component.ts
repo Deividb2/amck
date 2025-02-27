@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from "../../components/header/header.component";
 import { BannerComponent } from "../../components/banner/banner.component";
+import { AdvantagesComponent } from '../../components/advantages/advantages.component';
 import { ProjectsComponent } from "../../components/projects/projects.component";
 import { StagesComponent } from "../../components/stages/stages.component";
 import { AboutComponent } from "../../components/about/about.component";
@@ -13,7 +14,7 @@ import { FooterComponent } from "../../components/footer/footer.component";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, BannerComponent, ProjectsComponent, AboutComponent, ContactComponent, FaqComponent, WhatsappComponent, FeedbacksComponent, FooterComponent],
+  imports: [HeaderComponent, BannerComponent, AdvantagesComponent, ProjectsComponent, AboutComponent, ContactComponent, FaqComponent, WhatsappComponent, FeedbacksComponent, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
