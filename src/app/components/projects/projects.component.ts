@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, IMAGE_CONFIG } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({

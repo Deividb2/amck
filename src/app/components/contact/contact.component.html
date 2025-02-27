@@ -30,18 +30,18 @@
             <div>
                 <label for="name">Nome</label>
                 <input type="text" id="name" placeholder="Digite seu nome" autocomplete="off" required
-                [(ngModel)]="formData.name">
+                [(ngModel)]="formData.name" name="name">
             </div>
             <div>
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Digite seu email" autocomplete="off" required
-                [(ngModel)]="formData.email">
+                [(ngModel)]="formData.email" name="email">
             </div>
 
             <div>
                 <label for="msg">Mensagem</label>
                 <textarea name="message" id="msg" placeholder="Digite sua mensagem" required
-                [(ngModel)]="formData.email"></textarea>
+                [(ngModel)]="formData.email" name="message"></textarea>
             </div>
 
             <div>
