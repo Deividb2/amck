@@ -1,10 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { NgIcon, provideIcons } from '@ng-icons/core';
+import { matAdd } from '@ng-icons/material-icons/baseline';
 
 @Component({
   selector: 'app-stages',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NgIcon],
+  providers: [provideIcons({ matAdd })],
   templateUrl: './stages.component.html',
   styleUrl: './stages.component.scss',
 })

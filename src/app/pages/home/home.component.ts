@@ -14,7 +14,7 @@ import { FooterComponent } from "../../components/footer/footer.component";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, BannerComponent, AdvantagesComponent, ProjectsComponent, AboutComponent, ContactComponent, FaqComponent, WhatsappComponent, FeedbacksComponent, FooterComponent],
+  imports: [HeaderComponent, BannerComponent, AdvantagesComponent, ProjectsComponent, AboutComponent, ContactComponent, FaqComponent, WhatsappComponent, FeedbacksComponent, FooterComponent, StagesComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

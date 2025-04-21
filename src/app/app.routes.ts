@@ -12,12 +12,18 @@ export const routes: Routes = [
         title: 'AMCK Planejados'
     },
     {
+        path: 'leads',
+        loadComponent: () => import('./pages/leads/leads.component').then((page) => page.LeadsComponent),
+        title: 'Captura de Leads'
+    },
+    {
         path: 'terms',
-        component: TermsComponent,
+        loadComponent: () => import('./pages/terms/terms.component').then((page) => page.TermsComponent),
         title: 'Termos e condições'
     },
     {
         path: '**',
-        component: ErrorComponent
+        loadComponent: () => import('./pages/error/error.component').then((page) => page.ErrorComponent),
+        title: 'Erro | Página não encontrada'
     }
 ];

@@ -1,19 +1,54 @@
-<section class="stages">
-    <h2 class="stages__title">Etapas do projeto</h2>
+<section class="bonus">
+    <div class="bonus__header">
+        <h2>VEJA AS ETAPAS DE FABRICAÇÃO DO SEU MÓVEL</h2>
+        <h3>Se você aplicar este plano, suas chances de conseguir um emprego em até 30 dias vão aumentar drasticamente!</h3>
+    </div>
 
-    <div class="stages__cards">
-
-        <div class="stages__cards--card" *ngFor="let stage of stages; let i = index">
-            <div class="stages__cards--card__head">
-                <span>{{ i+1 }}°</span>
-                <h3>{{ stage.title }}</h3>
+    <div class="bonus__blocks">
+        <div class="bonus__blocks--left">
+            <div class="bonus__blocks--left__day">
+                <h4>Projeção</h4>
+                <ul>
+                    <li><div><ng-icon name="matAdd" /></div>Escolha de cores e tonalidades</li>
+                    <li><div><ng-icon name="matAdd" /></div>Planejamento de ambinte</li>
+                    <li><div><ng-icon name="matAdd" /></div>LinkedIn profissional</li>
+                </ul>
             </div>
-            <p class="stages__cards--card__text">{{ stage.text }}</p>
+            <div class="bonus__blocks--left__day">
+                <h4>Entrega</h4>
+                <ul>
+                    <li><div><ng-icon name="matAdd" /></div>Limpeza</li>
+                    <li><div><ng-icon name="matAdd" /></div>Empacotamento</li>
+                    <li><div><ng-icon name="matAdd" /></div>E entrega de materiais</li>
+                </ul>
+            </div>
         </div>
-        
+
+        <div class="bonus__blocks--line"></div>
+
+        <div class="bonus__blocks--right">
+            <div class="bonus__blocks--right__day">
+                <h4>Contratação</h4>
+                <ul>
+                    <li><div><ng-icon name="matAdd" /></div>Negociação de valores</li>
+                    <li><div><ng-icon name="matAdd" /></div>Definição de prazos</li>
+                    <li><div><ng-icon name="matAdd" /></div>Observação de garantias<li>                   
+                    <li><div><ng-icon name="matAdd" /></div>Consideração de assistência<li>                   
+                </ul>
+            </div>
+            <div class="bonus__blocks--right__day">
+                <h4>Montagem</h4>
+                <ul>
+                    <li><div><ng-icon name="matAdd" /></div>Montagem gratuita</li>
+                    <li><div><ng-icon name="matAdd" /></div>Reparos e acabamentos</li>
+                    <li><div><ng-icon name="matAdd" /></div>Preparação final</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bonus__footer">
+        <p>E o melhor: Com esse plano, você enviará currículo para 30 vagas por dia.</p>
+        <p>Com um currículo impecável e esse volume de candidaturas, será impossível não conseguir uma vaga!</p>
     </div>
 </section>
-
-<!-- 
-https://www.simonetto.com.br/planejados/moveis-planejados-3/?gad_source=1&gclid=CjwKCAiAlPu9BhAjEiwA5NDSA7ACIYOycvPGDo0-Lno14sYimUwoq4YNgThOx2NVWvXUyerQBih0nxoCl00QAvD_BwE
--->

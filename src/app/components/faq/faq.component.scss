@@ -1,34 +1,28 @@
-.faq-container {
+@use "../../../assets/styles/variables" as *;
+
+.faq {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
-    padding: 0 1rem;
-    margin: 2rem 0;
+    padding: 4rem 1rem;
 
     &__title {
-        font-size: 2rem;
         text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
     }
 
     &__questions {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
     }
 }
 
 @media(min-width: 768px) {
-    .faq-container {
-        align-items: center;
-        gap: 3rem;
-        &__questions {
-            grid-template-columns: 40rem;
-        }
-    }
-}
-
-@media(min-width: 1024px) {
-    .faq-container {
-        &__questions {
-            grid-template-columns: 50rem;
-        }
+    .faq {
+        min-height: 100vh;
     }
 }

@@ -1,42 +1,54 @@
 @use "../../../../assets/styles/variables" as *;
 
-.questions {
+.question {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #000;
-    cursor: default;
-
-    &__question {
+    max-width: 50rem;
+    
+    &__head {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        gap: .5rem;
+        background-color: transparent;
+        // border: 1px solid $clr-surface-a50;
+        border: 1px solid #000;
         padding: 1rem;
-        
-        &--title {
-            font-size: 1rem;
-        }
-        
+
         &--arrow {
-            transform: rotate(90deg);
+            font-size: 1.2rem;
+        }
+
+        &--question {
+            font-weight: 400;
         }
     }
 
     &__response {
-        padding: 0 1rem;
+        transition: all .5s ease-in-out;
         height: 0;
         overflow: hidden;
-        transition: all .2s ease;
+        padding: 0 1rem;
+        // color: $clr-surface-a50;
+        color: #121212;
     }
-
-    .openResponse {
-        height: auto;
+    
+    .openFaq {
+        height: 8rem;
         padding: 1rem;
-        border-top: 1px solid #000;
     }
 }
 
+@media(min-width: 768px) {
+    .question {
+        .openFaq {
+            height: 5rem; 
+        }
+    }
+}
+
+
 @media(min-width: 1024px) {
-    .questions {
+    .question {
         cursor: pointer;
     }
 }

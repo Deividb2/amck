@@ -1,0 +1,10 @@
+.pulse-animation {
+    animation: pulseWhats 1.5s infinite;
+    box-shadow: 0 0 0 1.5rem transparent;
+}
+
+@keyframes pulseWhats {
+    0% { 
+        box-shadow: 0 0 0 0 #0bf00b; 
+    }
+}

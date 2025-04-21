@@ -10,10 +10,11 @@ import { QuestionsComponent } from './questions/questions.component';
   styleUrl: './faq.component.scss'
 })
 export class FaqComponent {
-  questions: ReadonlyArray<IQuestions> = [
+
+  faqDatas: ReadonlyArray<IFaqDatas> = [
     {
-      question: "Quais os são meios de pagamentos?",
-      response: "Nossos meios de pagamentos são: pix, débito, crédito e dinheiro"
+      question: "Quais são os meios de pagamentos?",
+      response: "Atualmente, nossos meios de pagamentos são: pix, débito, crédito e dinheiro"
     },
     {
       question: "Onde a AMCK atua?",
@@ -37,16 +38,16 @@ export class FaqComponent {
     },
     {
       question: "É possível alterar o design do projeto mesmo depois de aprovado?",
-      response: "Sim. Se o você aprovou um projeto mas no decorrer do processo não gostou de certos detalhes, o profissional avaliará a mudança a ser feita e entregará o melhor resultado possível!"
+      response: "Se o cliente aprovou um projeto mas no decorrer do processo não gostou de certos detalhes, o profissional avaliará a mudança a ser feita e entregará o melhor resultado possível! No entanto, dependendo da mundança, o cliente deve estar ciente que o valor final do serviço pode ser alterado."
     },
     {
       question: "E se o orçamento ultrapassar meu limite financeiro?",
-      response: "A AMCK sempre visa propor um preço justo aos nossos parceiros. Portanto, em caso de necessidade, oferecemos uma flexibilidade na negociação de valores."
+      response: "Sempre visamos propor um preço justo aos nossos parceiros. Portanto, em caso de necessidade, oferecemos uma flexibilidade na negociação de valores."
     }
   ]
 }
 
-interface IQuestions {
+interface IFaqDatas {
   question: string
   response: string
 }

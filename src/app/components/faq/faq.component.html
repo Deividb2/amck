@@ -1,11 +1,9 @@
-<section class="faq-container">
-    <h2 class="faq-container__title">Perguntas Frequentes</h2>
+<section class="faq">
+    <h2 class="faq__title">Perguntas Frequentes</h2>
 
-    <div class="faq-container__questions">
-        <app-questions
-            *ngFor="let i of questions"
-            [question]="i.question"
-            [response]="i.response"
-        ></app-questions>
+    <div class="faq__questions">
+        @for (item of faqDatas; track $index) {
+            <app-questions [question]="item.question" [response]="item.response" />
+        }
     </div>
 </section>

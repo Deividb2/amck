@@ -1,0 +1,18 @@
+<section class="benefits">
+    <div class="benefits__header">
+        <h2 class="benefits__header--title">O que você vai ter acesso?</h2>
+        <h3 class="benefits__header--subtitle">Ao se cadastrar em nossa lista de emails, você terá acesso a uma gama de ofertas exclusivas diretamente do seu email. Não fique de fora dessa!</h3>
+    </div>
+
+    <div class="benefits__cards">
+        @for (card of cardsData; track $index) {
+            <div class="benefits__cards--card">
+                <div class="benefits__cards--card__icon">
+                    <ng-icon [name]="card.icon"></ng-icon>
+                </div>
+                <h4 class="benefits__cards--card__title">{{ card.title }}</h4>
+                <h5 class="benefits__cards--card__subtitle">{{ card.subtitle }}</h5>
+            </div>
+        }
+    </div>
+</section>
