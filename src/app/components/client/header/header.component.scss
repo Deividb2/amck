@@ -12,12 +12,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 15vh;
+        padding: 1rem;
         background-color: #0000005a;
         transition: background-color .5s ease-in-out;
 
         &--logo {
-            padding-left: 1rem;
             color: $clr-light;
         }
 
@@ -27,7 +26,6 @@
             font-size: 2rem;
             color: $clr-light;
             height: 100%;
-            padding: 0 1rem;
         }
     }
 
@@ -35,7 +33,7 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        height: 85vh;
+        height: 90vh;
         width: 0;
         padding: 1rem 0 2rem;
         background-color: $clr-secundary-a0;
@@ -113,8 +111,8 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding-bottom: 0;
         background-color: #0000005a;
+        // height: 15vh;
         
         &__top {
             background-color: transparent;
