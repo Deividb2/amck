@@ -18,7 +18,7 @@
         margin-top: 5rem;
 
         h2 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 800;
         }
 
@@ -52,16 +52,6 @@
             a {
                 align-self: center;
                 border-radius: 0;
-            }
-        }
-    }
-}
-
-@media(min-width: 1024px) {
-    .banner {
-        &__content {      
-            h2 {
-                font-size: 3.5rem;
             }
         }
     }
