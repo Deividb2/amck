@@ -1,0 +1,82 @@
+@use "../../../../assets/styles/variables" as *;
+
+.painel {
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: $clr-secundary-a0;
+
+        &--title {
+            color: $clr-primary-a0;
+        }
+
+        &--iconMenu {
+            display: flex;
+            font-size: 2rem;
+            color: $clr-secundary-a0;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        list-style: none;
+        background-color: $clr-primary-a0;
+        min-height: 90vh;
+        padding: 1rem 0;
+        width: 0;
+        overflow-x: hidden;
+        transition: all .3s ease-in-out;
+        
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            div {
+                display: flex;
+                font-size: 1.3rem;
+                color: $clr-secundary-a0;
+            }
+            
+            a {
+                text-decoration: none;
+                white-space: nowrap;
+                font-weight: 700;
+                color: $clr-secundary-a0;
+            }
+        }
+    }
+}
+
+.openMenu {
+    width: 80vw;
+    padding: 1rem;
+}
+
+@media(min-width: 768px) {
+    .painel {
+        width: 20vw;
+        height: 100vh;
+        position: fixed;
+        border-right: 4px solid $clr-primary-a0;
+        
+        &__top {
+            &--iconMenu {
+                display: none;
+            }
+        }
+
+        &__nav {
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+}

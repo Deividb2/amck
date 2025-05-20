@@ -1,0 +1,57 @@
+.budget-confirmation {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: #ccc;
+    position: absolute;
+    top: 50;
+    left: 50%;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+
+    &::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            h5 {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: .5rem;
+
+        button {
+            padding: .5rem;
+            font-weight: 600;
+            cursor: pointer;
+
+            &:last-child {
+                background-color: transparent;
+                text-decoration: underline;
+                border: none;
+            }
+        }
+    }
+}

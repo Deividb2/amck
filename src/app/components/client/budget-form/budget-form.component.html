@@ -1,0 +1,58 @@
+<section class="budget" id="budget">
+    <div class="budget__img"></div>
+    <div class="budget__form">
+        <h2 class="budget__form--title">Realize seu orçamento</h2>
+        
+        <form [formGroup]="budgetForm" (submit)="sendDatas($event)">
+            <div>
+                <label for="name">Seu nome</label>
+                <input type="text" name="name" id="name" placeholder="Escreva seu nome completo" formControlName="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="ex: nome@gmail.com" formControlName="email" required>
+            </div>
+
+            <div>
+                <label for="tel">Telefone/Whatsapp</label>
+                <input type="tel" name="tel" id="tel" placeholder="Somente números" formControlName="tel" required>
+            </div>
+            
+            <div>
+                <label for="endereço">Seu endereço</label>
+                <input type="adress" name="endereço" id="endereço" placeholder="Escreva seu endereço" formControlName="adress" required>
+            </div>
+
+            <div>
+                <select name="ambientes" id="" formControlName="environments">
+                    <option value="" selected disabled>Selecione o ambiente</option>
+                    <option value="quarto">Quarto</option>
+                    <option value="banheiro">Banheiro</option>
+                    <option value="cozinha">Cozinha</option>
+                    <option value="sala">Sala</option>
+                    <option value="escritorio">Escritório</option>
+                    <option value="closet">Closet</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div>
+                <select name="estimativa" id="estimate" formControlName="estimate">
+                    <option value="" selected disabled>Estimativa de gasto</option>
+                    <option value="2000">Até R$ 2.000</option>
+                    <option value="5000">Até R$ 5.000</option>
+                    <option value="10000">Até R$ 10.000</option>
+                    <option value="15000">Mais de R$ 15.000</option>
+                </select>
+            </div>
+
+            <div class="message">
+                <label for="message">Descreva sua necessidade</label>
+                <textarea name="message" id="message" placeholder="Descreva melhor o que você precisa" formControlName="message"></textarea>
+            </div>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</section>

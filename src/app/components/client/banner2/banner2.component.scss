@@ -1,0 +1,68 @@
+@use "../../../../assets/styles/variables" as *;
+
+.banner {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../../../../../public/images/pexels/img2.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+    background-blend-mode: color;
+    background-color: #00000090;
+    color: $clr-light;
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 1rem 4rem;
+        margin-top: 5rem;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.4rem;
+            color: #ccc;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 800;
+            padding: 1rem 1.5rem;
+            border: 2px solid $clr-light;
+            align-self: start;
+            color: $clr-light;
+            transition: all .5s ease-in-out;            
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .banner {
+        justify-content: center;
+
+        &__content {
+            max-width: 40rem;
+            text-align: center;
+
+            a {
+                align-self: center;
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .banner {
+        &__content {      
+            h2 {
+                font-size: 3.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<section class="advantages">
+    <h2 class="advantages__title">Algumas vantagens dos móveis planejados</h2>
+    <div class="advantages__cards">
+        @for (card of advantages; track $index) {
+            <div class="advantages__cards--card">
+                <div class="advantages__cards--card__icon">
+                    <ng-icon [name]="card.icon"></ng-icon>
+                </div>
+                <h4 class="advantages__cards--card__title">{{ card.title }}</h4>
+                <h5 class="advantages__cards--card__text">{{ card.text }}</h5>
+            </div>
+        }
+    </div>
+</section>

@@ -1,0 +1,65 @@
+@use "../../../../assets/styles/variables" as *;
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .feedbacks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    &__comment {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      border: 1px solid #141414;
+      padding: 1rem;
+
+      &--stars {
+        color: gold;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid #141414;
+      }
+
+      &--text {
+        font-size: 1.1rem;
+        font-weight: 400;
+        padding-top: .5rem;
+        line-height: 1.7rem;
+      }
+    }
+  }
+
+}
+
+@media(min-width: 768px) {
+  section {
+    h2 {
+      font-size: 2.5rem;
+      max-width: 40rem;
+    }
+
+    .feedbacks {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media(min-width: 1024px) {
+  section {
+    .feedbacks {
+      grid-template-columns: 30rem 30rem;
+    }
+  }
+}

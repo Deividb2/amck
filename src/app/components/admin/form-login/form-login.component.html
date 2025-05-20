@@ -1,0 +1,19 @@
+<section class="login">
+
+    <div class="login__box">
+        <div class="login__box--img"></div>
+        <h2 class="login__box--title">Fazer Login</h2>
+        
+        <form class="login__box--form" [formGroup]="loginForm" (submit)="sendInfos($event)">
+            <input type="text" name="name" placeholder="Nome do administrador" formControlName="name" autocomplete="off" required>
+            <div class="login__box--form__password">
+                <input [type]="inputPasswordType" name="password" placeholder="Senha do administrador" formControlName="password" autocomplete="off" required>
+                <button type="button" (click)="showPassword()">
+                    <ng-icon [name]="iconStatePassword"></ng-icon>
+                </button>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</section>

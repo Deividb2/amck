@@ -1,0 +1,44 @@
+<nav class="painel">
+    <div class="painel__top">
+        <h1 class="painel__top--title">Painel</h1>
+        <div class="painel__top--iconMenu" (click)="hendleMenu()">
+            <ng-icon [name]="menuIcon" />
+        </div>
+    </div>
+    <ul class="painel__nav" [class.openMenu]="menu">
+        <li>
+            <div>
+                <ng-icon name="matMenu" />
+            </div>
+            <a href="#">Dashboard</a>
+        </li>
+
+        <li>
+            <div>
+                <ng-icon name="matMenu" />
+            </div>
+            <a href="#">Gestão de Projetos</a>
+        </li>
+
+        <li>
+            <div>
+                <ng-icon name="matMenu" />
+            </div>
+            <a href="#">Mensagens</a>
+        </li>
+
+        <li>
+            <div>
+                <ng-icon name="matMenu" />
+            </div>
+            <a href="#">Leads</a>
+        </li>
+
+        <li>
+            <div>
+                <ng-icon name="matMenu" />
+            </div>
+            <a href="#">Agenda</a>
+        </li>
+    </ul>
+</nav>

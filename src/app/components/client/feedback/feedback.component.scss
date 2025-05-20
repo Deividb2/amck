@@ -1,0 +1,84 @@
+@use "../../../../assets/styles/variables" as *;
+
+.feedbacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2rem 1rem;
+    background-color: $clr-primary-a0;
+
+    &__title {
+        font-size: 2.1rem;
+        font-weight: 800;
+        color: $clr-secundary-a0;;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        &--card {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            padding: 1.5rem 1rem;
+            border-radius: 1rem;
+            background-color: $clr-light;
+            max-width: 20rem;
+
+            &--stars {
+                display: flex;
+                gap: .1rem;
+                color: gold;
+                font-size: 1.2rem;
+            }
+
+            &--text {
+                line-height: 1.4rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .feedbacks {
+        &__title {
+            font-size: 2.5rem;
+            max-width: 35rem;
+            text-align: center;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .feedbacks {
+        align-items: start;
+        justify-content: center;
+        min-height: 80vh;
+
+        &__title {
+            text-align: start;
+            margin-left: 3rem;
+        }
+
+        &__cards {
+            align-self: center;
+            gap: 1rem;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .feedbacks {
+        &__title {
+            margin-left: 7rem;
+        }
+
+        &__cards {
+            gap: 2rem;
+        }
+    }
+}
