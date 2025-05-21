@@ -1,4 +1,4 @@
-<section class="budget" id="budget">
+<section class="budget">
     <div class="budget__img"></div>
     <div class="budget__form">
         <h2 class="budget__form--title">Realize seu orçamento</h2>
@@ -6,12 +6,12 @@
         <form [formGroup]="budgetForm" (submit)="sendDatas($event)">
             <div>
                 <label for="name">Seu nome</label>
-                <input type="text" name="name" id="name" placeholder="Escreva seu nome completo" formControlName="name" required>
+                <input type="text" name="name" id="name" placeholder="Escreva seu nome completo" formControlName="name">
             </div>
 
             <div>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="ex: nome@gmail.com" formControlName="email" required>
+                <input type="email" name="email" id="email" placeholder="ex: nome@gmail.com" formControlName="email">
             </div>
 
             <div>
@@ -21,11 +21,11 @@
             
             <div>
                 <label for="endereço">Seu endereço</label>
-                <input type="adress" name="endereço" id="endereço" placeholder="Escreva seu endereço" formControlName="adress" required>
+                <input type="text" name="endereço" id="endereço" placeholder="Escreva seu endereço" formControlName="address">
             </div>
 
             <div>
-                <select name="ambientes" id="" formControlName="environments">
+                <select name="ambientes" formControlName="environments">
                     <option value="" selected disabled>Selecione o ambiente</option>
                     <option value="quarto">Quarto</option>
                     <option value="banheiro">Banheiro</option>

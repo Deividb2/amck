@@ -1,0 +1,13 @@
+<section class="stages">
+    <h2 class="stages__title">Etapas do serviço</h2>
+
+    <div class="stages__container-cards">
+        @for (item of stages; track $index) {
+            <div class="stages__container-cards--card">
+                <div class="stages__container-cards--card__icon"><ng-icon [name]="item.icon" /></div>
+                <h3>{{ item.title }}</h3>
+                <h4>{{ item.text }}</h4>
+            </div>
+        }
+    </div>
+</section>
