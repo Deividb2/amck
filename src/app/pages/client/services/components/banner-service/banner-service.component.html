@@ -6,15 +6,14 @@
             <p>Nosso compromisso é criar móveis que combinem utilidade e beleza, garantindo que cada peça se encaixe perfeitamente. Entregamos projetos pensados para aproveitar seu espaço e refletir seu gosto e preferência.</p>
             <p>Sua casa merece móveis que não te dê dor de cabeça. Com a gente você tem qualidade e suporte em todo o processo de fabricação, além de um preço que cabe no seu bolso. Vamos planejar juntos a melhor solução para você!</p>
         </div>
-        <a href="#budget">Fazer orçamento</a>
+        <a href="#budget" class="button-simple-animation">Fazer orçamento</a>
     </div>
 
     <div class="banner__environments">
         @for (item of environments; track $index) {
-            <div class="banner__environments--item">
-                <!-- <h3>{{ item.title }}</h3> -->
-                <img [src]="item.pathImg" alt="imagem do banner" class="banner__environments--item__img">
-            </div>
+            <figure class="banner__environments--item">
+                <img [ngSrc]="item.pathImg" [alt]="item.alt" fill priority>
+            </figure>
         }
     </div>
 </section>

@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 .pulse-animation {
     animation: pulseWhats 1.5s infinite;
     box-shadow: 0 0 0 1.5rem transparent;
@@ -6,5 +8,16 @@
 @keyframes pulseWhats {
     0% { 
         box-shadow: 0 0 0 0 #0bf00b; 
+    }
+}
+
+.button-simple-animation {
+    background-color: transparent;
+    color: $clr-light;
+    transition: all .2s ease-in;
+
+    &:hover {
+        background-color: $clr-secundary-a0;
+        color: $clr-primary-a0;
     }
 }

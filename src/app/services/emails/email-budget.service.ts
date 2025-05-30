@@ -12,10 +12,5 @@ export class EmailBudgetService {
     
     submitBudgetFormEmail(formData: any): Promise<any> {
         return emailjs.send(this.#serviceId, this.#templateId, formData, this.#publicKey)
-            .then(() => alert("Email enviado com sucesso"))
-            .catch((error) => {
-                console.error("Erro ao enviar email: ",  error)
-                alert("Erro ao enviar email")
-            })
     }
 }

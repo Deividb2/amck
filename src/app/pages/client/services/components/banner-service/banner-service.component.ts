@@ -1,30 +1,31 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-banner-service',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './banner-service.component.html',
   styleUrl: './banner-service.component.scss'
 })
 export class BannerServiceComponent {
 
-  environments: ReadonlyArray<{title: string, pathImg: string}> = [
+  environments: ReadonlyArray<{pathImg: string, alt: string}> = [
     {
-      title: "Sala",
-      pathImg: "images/pexels/img1.jpg"
+      pathImg: "images/moveis/img28.jpeg",
+      alt: "Imagem de armário"
     },
     {
-      title: "Quarto",
-      pathImg: "images/moveis/img46.jpeg"
+      pathImg: "images/moveis/img46.jpeg",
+      alt: "Imagem de armário"
     },
     {
-      title: "Cozinha",
-      pathImg: "images/pexels/img5.jpg"
+      pathImg: "images/moveis/img42.jpeg",
+      alt: "Imagem de armário"
     },
     {
-      title: "Banheiro",
-      pathImg: "images/pexels/img2.jpg"
+      pathImg: "images/moveis/img9.jpeg",
+      alt: "Imagem de armário"
     }
   ]
 

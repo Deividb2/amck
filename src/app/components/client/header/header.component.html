@@ -11,7 +11,7 @@
         <nav class="header__links--nav">
             <a routerLink="/">Home</a>
             <a routerLink="contato">Contato</a>
-            <a routerLink="servicos">Serviços</a>
+            <a routerLink="servicos">Serviço</a>
             <div  class="header__links--nav__dropdown">
                 <button (click)="hendleDropdown()">Ambientes <ng-icon [name]="dropdownIcon" /></button>
                 @if (dropdown) {
@@ -25,6 +25,6 @@
             </div>
         </nav>
     
-        <a routerLink="desconto" class="header__links--discount">20% de desconto</a>
+        <a href="#budget" class="header__links--discount">Fazer orçamento</a>
     </div>
 </header>

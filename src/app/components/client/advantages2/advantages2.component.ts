@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
-import { matAttachMoney, matColorize, matConstruction, matDesignServices, matDiscount, matDraw, matShowChart, matTimer, matTipsAndUpdates, matTrendingUp } from '@ng-icons/material-icons/baseline';
+import { matDesignServices, matTipsAndUpdates, matTimer, matConstruction, matTrendingUp, matDiscount } from '@ng-icons/material-icons/baseline';
 
 @Component({
   selector: 'app-advantages2',
   standalone: true,
   imports: [CommonModule, NgIcon],
-  providers: [provideIcons({ matDesignServices, matConstruction, matTimer, matTipsAndUpdates, matColorize, matShowChart, matTrendingUp, matDiscount })],
+  providers: [provideIcons({ matDesignServices, matTipsAndUpdates, matTimer, matConstruction, matTrendingUp, matDiscount })],
   templateUrl: './advantages2.component.html',
   styleUrl: './advantages2.component.scss'
 })

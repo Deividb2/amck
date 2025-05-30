@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
-import { matStickyNote2Outline as orcamento, matConstructionOutline, matMapsHomeWorkOutline } from '@ng-icons/material-icons/outline';
+import { matStickyNote2Outline as orcamento, matConstructionOutline, matMapsHomeWorkOutline, matBuildOutline } from '@ng-icons/material-icons/outline';
 
 @Component({
   selector: 'app-stages',
   standalone: true,
   imports: [CommonModule, NgIcon],
-  providers: [provideIcons({ matMapsHomeWorkOutline, orcamento, matConstructionOutline })],
+  providers: [provideIcons({ matMapsHomeWorkOutline, orcamento, matConstructionOutline, matBuildOutline })],
   templateUrl: './stages.component.html',
   styleUrl: './stages.component.scss',
 })
@@ -29,7 +29,7 @@ export class StagesComponent {
       text: "Entregaremos tudo na sua residência, na data agendada para não atrasar seu projeto.",
     },
     {
-      icon: "matConstructionOutline",
+      icon: "matBuildOutline",
       title: "Montagem",
       text: "Iniciaremos o processo de entrega e montagem, e estaremos abertos a sujestões de melhoria.",
     },

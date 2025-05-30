@@ -9,7 +9,7 @@
 
     &__img {
         background-color: #ccc;
-        background: url(https://images.pexels.com/photos/8089073/pexels-photo-8089073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat bottom left / cover;
+        background: url(../../../../../public/images/pexels/img21.jpg) no-repeat bottom left / cover;
     }
 
     &__form {
@@ -42,10 +42,6 @@
                     border-radius: .5rem;
                     outline: none;
                     transition: all .3s ease-in-out;
-                    
-                    &:focus {
-                        box-shadow: 0 0 1rem #6a95e6;
-                    }
                 }
 
                 select {
@@ -68,8 +64,6 @@
                 font-weight: 700;
                 padding: .5rem 1.5rem;
                 border: 2px solid $clr-secundary-a0;
-                color: $clr-secundary-a0;
-                background-color: transparent;
                 cursor: pointer;
             }
         }

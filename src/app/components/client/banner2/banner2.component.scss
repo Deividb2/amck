@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../../../../../public/images/pexels/img2.jpg) no-repeat center / cover;
+    background: url(/images/pexels/img2.jpg) no-repeat center / cover;
     background-attachment: fixed;
     background-blend-mode: color;
     background-color: #00000090;
@@ -35,8 +35,6 @@
             padding: 1rem 1.5rem;
             border: 2px solid $clr-light;
             align-self: start;
-            color: $clr-light;
-            transition: all .5s ease-in-out;            
         }
     }
 }

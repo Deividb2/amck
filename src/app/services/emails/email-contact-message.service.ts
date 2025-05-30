@@ -12,10 +12,5 @@ export class EmailContactMessageService {
 
     submitEmailContactMessage(formData: any): Promise<any> {
         return emailjs.send(this.#serviceId, this.#templateId, formData, this.#publicKey)
-            .then(() => alert("Email enviado com sucesso"))
-            .catch((error) => {
-                console.error("Erro ao enviar o email: ", error)
-                alert("Erro ao enviar email")
-            })
     }
 }
