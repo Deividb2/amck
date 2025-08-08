@@ -8,7 +8,6 @@
     color: $clr-secundary-a0;
 
     &__img {
-        background-color: #ccc;
         background: url(../../../../../public/images/pexels/img21.jpg) no-repeat bottom left / cover;
     }
 
@@ -39,7 +38,7 @@
                 input[type="text"], input[type="email"], input[type="tel"] {
                     padding: 1rem;
                     border: 1px solid #ccc;
-                    border-radius: .5rem;
+                    border-radius: .2rem;
                     outline: none;
                     transition: all .3s ease-in-out;
                 }
@@ -51,7 +50,7 @@
                 }
 
                 textarea {
-                    min-height: 5rem;
+                    height: 10rem;
                     resize: none;
                     padding: .5rem;
                     outline: none;

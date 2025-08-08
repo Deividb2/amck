@@ -1,112 +1,56 @@
 @use "../../../../assets/styles/variables" as *;
 
 .banner {
-    display: grid;
-    gap: 2rem;
-    padding: 2rem 0;
-    background-color: $clr-primary-a0;
-    color: $clr-secundary-a0;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/images/pexels/img2.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+    background-blend-mode: color;
+    background-color: #00000090;
+    color: $clr-light;
     
     &__content {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        padding: 0 1rem;
+        padding: 2rem 1rem 4rem;
+        margin-top: 5rem;
 
-        &--title {
-            font-size: 3rem;
+        h2 {
+            font-size: 3.5rem;
             font-weight: 800;
-            color: $clr-secundary-a0;
         }
 
-        &--text {
+        h3 {
+            font-size: 1rem;
+            font-weight: 400;
             line-height: 1.4rem;
+            color: #ccc;
         }
 
-        &--links {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-
-            a {
-                text-decoration: none;
-                font-weight: 800;
-                align-self: start;
-                padding: 1rem;
-                border-radius: 2rem;
-                
-                &:first-child {
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
-                    background-color: $clr-secundary-a0;
-                    color: $clr-primary-a0;
-                }
-
-                &:last-child {
-                    color: $clr-secundary-a0;
-                    border: 2px solid $clr-secundary-a0;
-                }
-            }
+        a {
+            text-decoration: none;
+            font-weight: 800;
+            padding: 1rem 1.5rem;
+            border: 2px solid $clr-light;
+            align-self: start;
         }
-    }
-
-    &__img {
-        width: 100%;
-        max-width: 40rem;
-        align-self: center;
-        height: 70vh;
-        background: url(../../../../../public/images/logos/logo-amck-removebg-preview.png) no-repeat center / cover;
     }
 }
 
 @media(min-width: 768px) {
-    .banner {   
-        justify-content: center;
-        min-height: 100vh;
-        gap: 4rem;
-
-        &__content {
-            max-width: 45rem;
-
-            &--title {
-                max-width: 30rem;
-            }
-
-            &--text {
-                max-width: 35rem;
-            }
-
-            &--links {
-                flex-direction: row;
-            }
-        }
-    }
-}
-
-@media(min-width: 1024px) {
     .banner {
-        grid-template-columns: 1fr 1fr;
-        place-items: center;
-        gap: 0;
-        padding: 2rem 3rem;
+        justify-content: center;
 
         &__content {
-            gap: 2rem;
+            max-width: 40rem;
+            text-align: center;
 
-            &--title {
-                font-size: 3.2rem;
-                max-width: 30rem;
+            a {
+                align-self: center;
+                border-radius: 0;
             }
-
-            &--text {
-                font-size: 1.2rem;
-            }
-        }
-
-        &__img {
-            height: 60vh;
-            width: 30rem;
         }
     }
 }

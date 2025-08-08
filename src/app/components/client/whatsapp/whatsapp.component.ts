@@ -12,7 +12,7 @@ import { matWhatsapp } from '@ng-icons/material-icons/baseline';
 })
 export class WhatsappComponent {
   private message: string = "Olá, gostaria de fazer um orçamento!!"
-  private phoneNumber: string = "5521980587193"
+  private phoneNumber: string = "5521977201714"
   private encodedMessage = encodeURIComponent(this.message)
 
   openWhats() {

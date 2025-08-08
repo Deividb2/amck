@@ -9,10 +9,13 @@ import { RouterLink } from '@angular/router';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
+  protected email: string = 'mailto:amck.suporte@gmail.com'
   private message: string = "Olá, gostaria de fazer um orçamento!!"
-  private phoneNumber: string = "5521980587193"
+  protected cabinetmakerPhoneNumber: string = "5521980587193"
+  protected attendantPhoneNumber: string = "5521977201714"
   private encodedMessage = encodeURIComponent(this.message)
 
-  protected ulrFinal: string = `https://wa.me/${this.phoneNumber}?text=${this.encodedMessage}` 
-  protected email: string = 'mailto:amck.suporte@gmail.com'
+  sendMessage(phoneNumber: string) {
+    return `https://wa.me/${phoneNumber}?text=${this.encodedMessage}`
+  }
 }

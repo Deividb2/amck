@@ -1,0 +1,16 @@
+<section class="feedbacks">
+    <div class="feedbacks__container">
+        @for (item of comments; track $index) {
+            <div class="feedbacks__container--card">
+                <div class="feedbacks__container--card__stars">
+                    <ng-icon name="matStar" />
+                    <ng-icon name="matStar" />
+                    <ng-icon name="matStar" />
+                    <ng-icon name="matStar" />
+                    <ng-icon name="matStar" />
+                </div>
+                <p>{{ item.text }}</p>
+            </div>
+        }
+    </div>
+</section>

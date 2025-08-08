@@ -12,6 +12,8 @@ import { BathroomComponent } from "./environments/bathroom/bathroom.component";
 import { DormitoryComponent } from "./environments/dormitory/dormitory.component";
 import { KitchenComponent } from "./environments/kitchen/kitchen.component";
 import { LeadsComponent } from "./leads/leads.component";
+import { TermsComponent } from "../Policy/terms/terms.component";
+import { PrivacyPolicyComponent } from "../Policy/privacy-policy/privacy-policy.component";
 
 export const CLIENT_ROUTES: Routes = [
     {

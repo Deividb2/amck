@@ -24,11 +24,11 @@
     }
 
     &__response {
-        transition: all .5s ease;
         height: 0;
         overflow: hidden;
         padding: 0 1rem;
         color: #121212;
+        transition: all .5s ease;
     }
     
     .openFaq {

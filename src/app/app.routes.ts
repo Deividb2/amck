@@ -10,6 +10,10 @@ export const routes: Routes = [
         loadChildren: () => import('./pages/admin/admin.routes').then(m => m.ADMIN_ROUTES)
     },
     {
+        path: 'politica',
+        loadChildren: () => import('./pages/Policy/policy.routes').then(m => m.POLICY_ROUTES) 
+    },
+    {
         path: '**',
         loadComponent: () => import('./pages/error/error.component').then((page) => page.ErrorComponent),
         title: 'Erro | Página não encontrada'

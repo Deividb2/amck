@@ -13,28 +13,36 @@ export class FaqComponent {
 
   faqDatas: ReadonlyArray<{ question: string, response: string }> = [
     {
+      question: "Como posso solicitar um orçamento?",
+      response: "Para solicitar um orçamento, preencha o formulário disponível em nosso site ou entre em contato através das nossas mídias sociais."
+    },
+    {
       question: "Quais são os meios de pagamentos?",
       response: "Atualmente, nossos meios de pagamentos são: pix, débito, crédito e dinheiro"
     },
     {
-      question: "Onde a AMCK atua?",
-      response: "Atuamos em toda capital do Rio de Janeiro. Caso você deseje um profissional perto da sua residência, não hesite em nos contatar!"
+      question: "Como é feita a cobrança do móvel planejado?",
+      response: "A cobrança é feita de acordo com o projeto, com o valor proporcional à quantidade de móveis, tipos de acabamentos, puxadores, ferragens etc."
     },
     {
-      question: "Quais são as garantias?",
-      response: "Você tem direito a 1 ano de assistência, caso houver algum problema com o móvel. "
+      question: "Quais regiões a AMCK trabalha?",
+      response: "Atendemos em toda cidade do Rio de Janeiro."
+    },
+    {
+      question: "Quais são as garantias oferecidas?",
+      response: "Oferecemos 1 ano de assistência técnica, caso houver algum problema com o móvel. "
     },
     {
       question: "Qual é o prazo para entrega dos móveis planejados?",
-      response: "O prazo de entrega varia dependendo do projeto. Sempre buscamos ser fiel ao prazo pré-estabelecido."
+      response: "Buscamos entregar nossos armários em até 40 dias após o acordo."
     },
     {
       question: "Preciso pagar para fazer um orçamento?",
-      response: "Não!! Aqui você faz um orçamento totalmente gratuito, sem pressão e sem compromisso."
+      response: "Não, aqui você faz um orçamento totalmente gratuito, sem pressão e sem compromisso."
     },
     {
       question: "E se o orçamento ultrapassar meu limite financeiro?",
-      response: "Sempre visamos propor um preço justo aos nossos parceiros. Portanto, em caso de necessidade, oferecemos uma flexibilidade na negociação de valores."
+      response: "Sempre visamos propor um preço justo aos nossos parceiros. Além de oferecermos flexibilidade na negociação de valores."
     }
   ]
 }

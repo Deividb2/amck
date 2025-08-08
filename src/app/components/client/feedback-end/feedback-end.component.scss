@@ -1,0 +1,37 @@
+@use "../../../../assets/styles/variables" as *;
+
+.feedbacks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem;
+    background-color: $clr-primary-a0;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        &--card {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            padding: 1.5rem 1.5rem;
+            background-color: $clr-light;
+            border-radius: 1rem;
+            max-width: 22rem;
+
+            &__stars {
+                display: flex;
+                font-size: 1.2rem;
+                color: gold;
+            }
+
+            p {
+                line-height: 1.4rem;
+            }
+        }
+    }
+}

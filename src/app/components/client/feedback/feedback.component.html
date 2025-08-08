@@ -1,17 +1,20 @@
 <section class="feedbacks">
-    <h2 class="feedbacks__title">Transformando ambientes em amizades duradouras</h2>
-
     <div class="feedbacks__cards">
         @for (item of comments; track $index) {
             <div class="feedbacks__cards--card">
-                <div class="feedbacks__cards--card--stars">
-                    <ng-icon name="matStar" />
-                    <ng-icon name="matStar" />
-                    <ng-icon name="matStar" />
-                    <ng-icon name="matStar" />
-                    <ng-icon name="matStar" />
+                <img [src]="item.profile" alt="" class="feedbacks__cards--card__foto">
+    
+                <div class="feedbacks__cards--card__header">
+                    <h3>{{ item.name }}</h3>
+                    <div class="feedbacks__cards--card__header--stars">
+                        <ng-icon name="matStar" />
+                        <ng-icon name="matStar" />
+                        <ng-icon name="matStar" />
+                        <ng-icon name="matStar" />
+                        <ng-icon name="matStar" />
+                    </div>
                 </div>
-                <p class="feedbacks__cards--card--text">{{ item.text }}</p>
+                <p>{{ item.text }}</p>
             </div>
         }
     </div>

@@ -15,16 +15,17 @@
             <nav class="footer__top--nav">
                 <h5 class="footer__top--nav__title">Privacidade</h5>
                 <ul class="footer__top--nav__list">
-                    <li><a routerLink="terms">Termos de uso</a></li>
-                    <li><a href="#">Políticas de Privacidade</a></li>
+                    <li><a routerLink="politica/termos">Termos de uso</a></li>
+                    <li><a routerLink="politica/privacidade">Políticas de Privacidade</a></li>
                 </ul>
             </nav>
 
             <nav class="footer__top--nav">
                 <h5 class="footer__top--nav__title">Contato</h5>
                 <ul class="footer__top--nav__list">
-                    <li><a [href]="email" target="_blank">amck.suporte&#0064;gmail.com</a></li>
-                    <li><a [href]="ulrFinal" target="_blank">(21) 98058-7193</a></li>
+                    <li><a [href]="email" target="_blank">Envie um email</a></li>
+                    <li><a [href]="sendMessage(cabinetmakerPhoneNumber)" target="_blank">Falar com Marceneiro</a></li>
+                    <li><a [href]="sendMessage(attendantPhoneNumber)" target="_blank">Falar com Atendente</a></li>
                 </ul>
             </nav>
         </div>

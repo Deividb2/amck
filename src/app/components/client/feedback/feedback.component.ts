@@ -13,15 +13,21 @@ import { matStar } from '@ng-icons/material-icons/baseline';
 })
 export class FeedbackComponent {
 
-  comments: ReadonlyArray<{text: string}> = [
+  comments: ReadonlyArray<{name: string, text: string, profile: string}> = [
     {
-      text : "Tenho o prazer de recomendar o Alessandro, um excelente marceneiro com quem trabalho há mais de seis anos. Durante esse período, indiquei o trabalho dele a várias pessoas e todas ficaram extremamente satisfeitas."
+      name: "Bruno Barros",
+      text : "Precisava de um serviço de marcenaria em minha casa e me recomendaram o Alessandro. Eram armários antigos e precisavam de uma reforma interna e ele realizou um trabalho meticuloso e de qualidade. Os armários ficaram repaginados e muito bem feitos e bonitos!",
+      profile: "images/clients-profile/bruno-barros.png"
     },
     {
-      text: "Alessandro é um profissional de confiança, dedicado e habilidoso, sempre entregando serviços de alta qualidade. Além disso, ele tem um preço justo e é extremamente pontual, sempre cumprindo os prazos estabelecidos."
+      name: "Roberto Filho",
+      text: "Alessandro é um profissional de confiança, dedicado e habilidoso, sempre entregando serviços de alta qualidade. Além disso, ele tem um preço justo e é extremamente pontual, sempre cumprindo os prazos estabelecidos.",
+      profile: "images/clients-profile/profile2.jpg"
     },
     {
-      text: "Gostaria de expressar minha satisfação com o excelente trabalho realizado! A qualidade do acabamento, a atenção aos detalhes e o capricho superaram minhas expectativas. Além disso, seu profissionalismo fez toda a diferença."
+      name: "Flávia Cruz",
+      text: "Gostaria de expressar minha satisfação com o excelente trabalho realizado! A qualidade do acabamento, a atenção aos detalhes e o capricho superaram minhas expectativas. Além disso, seu profissionalismo fez toda a diferença.",
+      profile: "images/clients-profile/profile2.jpg"
     }
   ]
 

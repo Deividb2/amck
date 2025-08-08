@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Banner2Component } from './banner2.component';
+import { FeedbackEndComponent } from './feedback-end.component';
 
-describe('Banner2Component', () => {
-  let component: Banner2Component;
-  let fixture: ComponentFixture<Banner2Component>;
+describe('FeedbackEndComponent', () => {
+  let component: FeedbackEndComponent;
+  let fixture: ComponentFixture<FeedbackEndComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Banner2Component]
+      imports: [FeedbackEndComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Banner2Component);
+    fixture = TestBed.createComponent(FeedbackEndComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
