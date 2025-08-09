@@ -20,14 +20,14 @@ export class FeedbackComponent {
       profile: "images/clients-profile/bruno-barros.png"
     },
     {
-      name: "Roberto Filho",
-      text: "Alessandro é um profissional de confiança, dedicado e habilidoso, sempre entregando serviços de alta qualidade. Além disso, ele tem um preço justo e é extremamente pontual, sempre cumprindo os prazos estabelecidos.",
-      profile: "images/clients-profile/profile2.jpg"
+      name: "Danielle Alves",
+      text: "Estou encantada com o trabalho realizado! Os armários da minha clínica ficaram lindos, com acabamento impecável e cada detalhe muito bem pensado. Além da qualidade, o atendimento foi excelente e o prazo cumprido direitinho. Recomendo de olhos fechados!",
+      profile: "images/clients-profile/danielle-alves.jpg"
     },
     {
       name: "Flávia Cruz",
-      text: "Gostaria de expressar minha satisfação com o excelente trabalho realizado! A qualidade do acabamento, a atenção aos detalhes e o capricho superaram minhas expectativas. Além disso, seu profissionalismo fez toda a diferença.",
-      profile: "images/clients-profile/profile2.jpg"
+      text: "Só tenho elogios ao ótimo serviço prestado pelo Alessandro. Encomendei um guarda roupa e um painel, simplesmente ficaram perfeitos, o material é de ótima qualidade e a dedicação dele não tem comparação. Sem falar que ele ainda montou meu armário de cozinha rsrs, amei o atendimento e o recomendo a todos.",
+      profile: "images/clients-profile/flavia-cruz.png"
     }
   ]
 
